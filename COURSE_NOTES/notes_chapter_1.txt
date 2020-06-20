@@ -1,0 +1,87 @@
+Construction of House
+
+1. Building a structure             ||   HTML
+ 
+2. Pipeling (eg. electricity pipe..) || JS 
+
+3. Interior designing stuff  || CSS
+
+
+
+
+Programming Language: When we want to automate the steps using any computer language which was previously been done by human manually.
+
+Step 1 
+Step 2
+Step 3
+
+UNIX (PAID)
+
+WINDOWS (PAID)
+
+LINUX(FREE)
+
+
+###  BLACK TEA
+1. Take a pan.
+
+2.Put on the burner.
+
+3. Put some water inside it
+
+4.  Boil it for 2 mins
+
+5. Put tea bag & sugar as per your taste
+
+6. Wait for 5 mins and then have it.
+
+
+
+## Adding 2 numbers:
+
+1. Select first number (x).
+
+2. Select second number (y).
+
+3. Calculate sum (s), Formula : s = x + y
+
+4. Multiply x & y, Formula: mul  = x *  y
+
+5. Calculate Substraction (subs), Formula : subs = x - y
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	
+</style>
+<script>
+	var x = 1;  // Variable 1
+	var y = 2;  // Variable 2
+	var sum = x + y; // Sum of Variable 1 & 2.
+	alert(sum;
+</script>
+<body>
+   <p> Hello World</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

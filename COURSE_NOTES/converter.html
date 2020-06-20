@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body><script>
+function converter(number) {	if (isNaN(number) || number < 0 || 999 < number) {
+		return "Please choose a number between 0 and 999.";
+	}
+
+let	unitsTxt = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirthteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"],
+	tensTxt = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"],
+	hundredsTxt = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+
+let 	units = number % 10,
+	tens = (number % 100 - units) / 10,
+	hundreds = (number % 1000 - number % 100) / 100;
+	let 	unitsOut, tensOut, hundredsOut;
+
+/* ZERO */
+
+if (number === 0) {
+		return "zero"; 	
+	} else {
+		unitsOut = unitsTxt[units];
+	}
+
+
+/* HUNDREDS */
+
+if (hundreds >= 1) {	
+	hundredsOut = hundredsTxt[hundreds] + " hundred ";
+} else if (hundreds < 1) {	
+	hundredsOut = hundredsTxt[hundreds] + "";
+} 
+
+
+
+/* UNITS AND TEENS */
+
+
+ 	if (tens === 1 && units >= 0) {
+		tensOut = tensTxt[0];
+		unitsOut = unitsTxt[10 + units]; 
+	} else if (1 <= units <= 9) {
+		tensOut = tensTxt[0];
+		unitsOut = unitsTxt[units]; 
+	} 
+
+/* TENS */
+
+if (tens > 1 && units === 0 ) {
+
+		tensOut = tensTxt[tens];
+		unitsOut = unitsTxt[units]; 
+	} else if (tens > 1) {
+
+		tensOut = tensTxt[tens] + "-";
+		unitsOut = unitsTxt[units]; 
+	} 
+
+
+
+	return hundredsOut + tensOut + unitsOut;
+
+}
+
+
+
+
+/* USER INPUT */	let user;	while (user = prompt("Choose a number between 0 and 999 :")) {	alert(converter(parseInt(user, 10)));
+	}
+
+</script></body></html>
