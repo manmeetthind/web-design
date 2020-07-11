@@ -1,7 +1,7 @@
 // **** Exercise 1 ****
 // 1. Take number one (x).
 // 2. Take number two (y).
-// 3. Calculate sum: x +  y
+// 3. Calculate sum: x + y
 var x = 10;
 var y = 20;
 var sum = x + y;
@@ -32,9 +32,9 @@ alert("Exercise 3: Multiplication of two numbers: " + multiplication);
 // 1. Take number one (x).
 // 2. Take number two (y).
 // 3. Calculate division: x / y
-// var x = 10;
-// var y = 20;
-// <Write your code here>
+var x = 10;
+var y = 20;
+var division = x / y;
 
 
 // **** Exercise 4 ****
@@ -73,7 +73,14 @@ alert("Exercise 5: SUM of two numbers: " + sum);
 // 6. Calculate substraction: x - y - z - a - b;
 // 7. Calculate multiply: x * y * z * a * b;
 // <Write your code here>
-
+var x = Number(prompt("Enter number one: ")); // 1
+var y = Number(prompt("Enter number two: ")); // 2
+var z = Number(prompt("Enter number third: ")); // 3
+var a = Number(prompt("Enter number fourth: ")); // 4
+var b = Number(prompt("Enter number fifth: ")); // 5
+var substraction =  x - y - z - a - b;
+var multiply = x * y * z * a * b;
+alert("Homework 2: Multiplication: "+ multiply + ", substraction :"+ substraction);
 
 
 // **** Homework 3 ****
@@ -84,3 +91,16 @@ alert("Exercise 5: SUM of two numbers: " + sum);
 // 5. Display Name, address, phone number, email-id.
 // <Write your code here>
 //  alert("Name: " + name + ", Address: " + address + ", Phone number: ", phone-number ", Email-id:", email)
+
+var name = prompt("Enter your name");
+var address = prompt("Enter yout address");
+var phone-number = Number(prompt("Enter Phone number"));
+var email = prompt("Enter email id");
+alert("Name: " + name + ", Address: " + address + ", Phone number: ", phone-number ", Email-id:", email);
+
+
+
+
+
+
+
