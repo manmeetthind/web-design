@@ -1,4 +1,4 @@
-var <VARIABLE_NAME> = <ASSIGN_VALUE>
+// var <VARIABLE_NAME> = <ASSIGN_VALUE>
 
 // Exercise 1: Create a integer variable name foo and assign 34 to it.
 var foo = 34;
@@ -15,9 +15,9 @@ var mobile_no = prompt("Enter your mobile no.");
 alert(name + roll_no + mobile_no);
 
 // Homework 1: Take radius from the user.
-Calculate circumference: 2 * PIE * radius
-Calculate surface area: PIE(3.14) * radius * radius
-Display Circumference and surface area.
+// Calculate circumference: 2 * PIE * radius
+// Calculate surface area: PIE(3.14) * radius * radius
+// Display Circumference and surface area.
 
 
 
@@ -43,7 +43,6 @@ if(A > B){
 if(A < B){
 	alert("B is largest, A is smallest.")
 }
-
 
 
 // Exercise 5
