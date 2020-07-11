@@ -41,8 +41,8 @@ var division = x / y;
 // 1. Take number one (x) from user.
 // 2. Take number two (y) from user.
 // 3. Calculate multiplication: x * y
-var x = prompt("Enter number one: ");
-var y = prompt("Enter number two: ");
+var x = Number(prompt("Enter number one: "));
+var y = Number(prompt("Enter number two: "));
 var multiplication = x * y;
 alert("Exercise 4: Multiplication of two numbers: " + multiplication);
 
