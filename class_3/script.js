@@ -14,6 +14,23 @@
 // END
 
 // SOLUTION for HOMEWORK 4 STARTS HERE
+var age = Number(prompt("Enter your age:"));  // STEP 1
+
+// STEP 2
+if(age >= 1 && age <= 17){
+    alert('You are not a major yet.')
+}
+
+// STEP 3
+if(age >= 18 && age <= 49){
+    alert('You are major, but not senior yet.')
+}
+
+// STEP 4
+if(age >= 50 && age <= 64){
+    alert('You are senior, but not yet retired.')
+}
+
 
 // SOLUTION for HOMEWORK 4 ENDS HERE
 
@@ -50,5 +67,17 @@ while(i <= 10){   // start -> 1 and i is smaller than or equal to 10
 // start -> 1 and end -> 25
 
 // SOLUTION for HOMEWORK 5 STARTS HERE
-
+var i = 1;
+while(i <= 25){   // start -> 1 and i is smaller than or equal to 25
+    alert("Bonjour");
+    i = i + 1; 
+} 
 // SOLUTION for HOMEWORK 5 ENDS HERE
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+// 1. Ask user some number and perform calculation on it and then alertit to the user.
+// 2. Ask user some number  and perform if else.
+// 3. While loop
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+// BUNNYGROPER@GMAIL.COM
