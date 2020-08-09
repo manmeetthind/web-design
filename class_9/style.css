@@ -1,0 +1,4 @@
+#linearGradient {
+    height: 200px;
+    background-image: linear-gradient(red, yellow, blue, green);
+  }
