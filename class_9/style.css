@@ -2,3 +2,7 @@
     height: 200px;
     background-image: linear-gradient(red, yellow, blue, green);
   }
+
+  #name:hover {
+    font-size: 15rem;
+}
