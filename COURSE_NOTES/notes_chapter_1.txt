@@ -64,7 +64,7 @@ LINUX(FREE)
 	var x = 1;  // Variable 1
 	var y = 2;  // Variable 2
 	var sum = x + y; // Sum of Variable 1 & 2.
-	alert(sum;
+	alert(sum);
 </script>
 <body>
    <p> Hello World</p>
