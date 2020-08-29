@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1> </h1>
+<button>Test</button>
+
+<script type = "text/javascript" language="javascript"> 
+        $(document).ready(function() { 
+               
+            $("button").click(function(event){ 
+                $.getJSON('mytest2.json', function(data) { 
+                    $('h1').html('<p> Name: ' + data.prenom + '</p>'); 
+                    $('h1').append('<p>Age : ' + data.nom + '</p>'); 
+                    $('h1').append('<p> Role: ' + data.age + '</p>'); 
+                }); 
+            }); 
+        }); 
+      </script> 
+</body>
+</html>

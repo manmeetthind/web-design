@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1> </h1>
+<button>Test</button>
+
+<script>
+
+$("button").click(function(){ 
+
+	$("h1").load("mytext.txt", function(response, status, http){ 
+		if(status == "success") 
+			alert("This worked successfully!"); 
+
+		if(status == "error") 
+			alert("Error: " + http.status + ": " + http.statusText); 
+                }); 
+}); 
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+Allo est une premièrene de texte... encore<br />
+Puis une <i style="color:red">autre</i> ligne.

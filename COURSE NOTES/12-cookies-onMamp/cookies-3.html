@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Cookies</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>Cookies</h1>
+<h2> </h2>
+    
+<SCRIPT LANGUAGE="JavaScript">
+
+cookie_name = "dataCookie";
+var YouEntered;
+
+function putCookie() {
+
+if(document.cookie != document.cookie)
+{index = document.cookie.indexOf(cookie_name);}
+else
+{ index = -1;}
+
+if (index == -1)
+{
+YouEntered=document.cf.cfd.value;
+document.cookie=cookie_name+"="+YouEntered+"; expires=Monday, 04-Apr-2030 05:00:00 GMT";
+}
+
+}
+
+
+cookie_name = "dataCookie";
+var YouWrote;
+
+function getName() {
+if(document.cookie)
+{
+index = document.cookie.indexOf(cookie_name);
+if (index != -1)
+{
+namestart = (document.cookie.indexOf("=", index) + 1);
+nameend = document.cookie.indexOf(";", index);
+if (nameend == -1) {nameend = document.cookie.length;}
+YouWrote = document.cookie.substring(namestart, nameend);
+return YouWrote;
+}
+}
+}
+
+YouWrote=getName();
+if (YouWrote == "dataCookie")
+{YouWrote = "Nothing_Entered"}
+</SCRIPT>
+
+<FORM NAME="cf">
+
+Enter A Word: 
+<INPUT TYPE="text" NAME="cfd" size="20">
+<INPUT TYPE="button" Value="Set to Cookie" onClick="putCookie()">
+
+</FORM>
+    
+<SCRIPT LANGUAGE="javascript">
+$("h2").html("You Entered: " + YouWrote);
+</SCRIPT>
+
+
+
+
+</body>
+</html>

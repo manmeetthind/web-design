@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	text-align: center;
+}
+
+section {
+	border: solid 1px black;
+	padding: 10px;
+	width : 80%;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+button {
+	padding: 5px 30px;
+	font-size: 1rem;
+	font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+
+
+<!--  EXAMPLE 1  -->
+<section id="conteneur1">
+	<button>Replace existing content using: html()</button>	<p>This my paragraph's existing content</p>
+</section>
+
+<script>$("button").click(function(){	$("p").html("<h1>html() considers HTML tags</h1>");});</script>
+
+
+<!--  EXAMPLE 2  -->
+<section id="conteneur2">
+	<button id="two">Replace existing content using: text()</button>
+	<h1 id="two">Existing content</h1>
+</section>
+
+<script>$("button#two").click(function(){	$("h1#two").text("<h1>text() treats HTML tags as text</h1>");});</script>
+
+
+<!--  EXAMPLE 3  -->
+<section id="conteneur3">
+	<button id="three">Append content using: append()</button>
+	<h1 id="three">Existing content</h1>
+</section>
+
+<script>$("button#three").click(function(){	$("h1#three").append("<i>/ added content</i>");});</script>
+
+
+<!--  EXAMPLE 4  -->
+<section id="conteneur4">
+	<button id="four">Inserting new content using: after()</button>
+	<div id="four">Existing content</div>
+</section>
+
+<script>$("button#four").click(function(){	$("div#four").after("<h1 style='color: red;'>New content</h1>");});</script>
+
+
+<!--  EXAMPLE 5  -->
+<section id="conteneur5">
+	<button id="five">Removing existing content using: remove()</button>
+	<div id="five"><h1>Existing content</h1></div>
+</section>
+
+<script>$("button#five").click(function(){	$("div#five").remove();});</script>
+
+<!--  EXAMPLE 6  -->
+<section id="conteneur6">
+	<button id="six-1">Sets full name in a variable</button>
+	<h1 id="myh1"> </h1>
+</section>
+
+<script>$("button#six-1").click(function(){	let name = prompt("What's your full name?");
+	let age = prompt("What's your age?");
+	let city = prompt("Where do you live?");
+	$("h1#myh1").css("color", "red");
+	$("h1#myh1").html("Your name is " + name + "<br />");
+	$("h1#myh1").append("Your are " + age + " year old <br />");
+	$("h1#myh1").append("and you live in  " + city);
+});
+</script>
+
+
+<!--  EXAMPLE 7  -->
+<section id="conteneur7">
+<form action="">
+	<label>Input :</label>
+	<input type="text" id="text" name="name" value="" />
+	<input type="button" id="text_value" value="Print Value"/>
+</form>
+
+<div id="testform"> </div>
+
+<script>
+// Function to get input value.
+$('#text_value').click(function() {
+	var text_value = $("#text").val();
+	$("div#testform").html("<h1>" + text_value + "<h1>");
+});
+
+</script>
+</section>
+
+
+</body>
+</html>
+
+
+
+

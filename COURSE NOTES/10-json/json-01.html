@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body><!-- EXAMPLE 1 -->
+<h2></h2>
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    $("h2").html(myObj.prenom + " " + myObj.nom + ", " + myObj.age + " ans.");
+  }
+};
+xmlhttp.open("GET", "http://www.monamijean.com/test/mytest.json", true);
+xmlhttp.send();
+</script><!-- EXAMPLE 2 -->
+
+<h1></h1>
+<script>
+$.getJSON('http://www.monamijean.com/test/mytest.json', function (data) {
+$("h1").append("You are " + data.age + " year old.");
+});
+
+</script></body>
+</html>

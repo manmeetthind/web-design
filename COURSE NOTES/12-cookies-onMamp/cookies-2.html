@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Cookie!!!</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+<body>
+
+<h2> </h2>
+
+<script type="text/javascript">
+
+Cookies.set('city', 'Montreal', { expires: 7, path: '' });
+Cookies.set('province', 'QC', { expires: 7, path: '' });
+Cookies.set('country', 'Canada', { expires: 7, path: '' })
+
+let myCity = Cookies.get('city');
+let myProvince = Cookies.get('province');
+let myCountry = Cookies.get('country');
+
+$("h2").html("I study in " + myCity + ", " + myProvince + " (" + myCountry + ").");
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	text-align: center;
+}
+
+section {
+	position: relative;
+	top: 80px;
+	border: solid 1px black;
+	padding: 10px;
+	width : 80%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#pink {
+	position: relative;
+	left: 0%;
+	width: 80px;
+	height: 80px;
+ 	background-color: pink;
+	animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+button {
+	position: relative;
+	top: 80px;
+	margin-top: 50px;
+	padding: 10px 30px;
+}
+
+@-webkit-keyframes example {
+	from {left: 0%;}
+  	to {left: calc(100% - 100px);}
+}
+
+.textblue {
+	color: blue;
+}
+</style>
+
+</head>
+<body>
+
+<section id="conteneur">
+	<div id="pink"> </div>
+</section>
+
+<div>
+<button id="demi">Half speed</button>
+<button id="normal">Normal speed</button>
+<button id="double">Double speed</button>
+</div>
+
+<script>
+$("#demi").click(function(){
+  	$(pink).css("animation-duration", "4s");
+});
+$("#normal").click(function(){
+  	$(pink).css("animation-duration", "2s");
+});
+$("#double").click(function(){
+  	$(pink).css("animation-duration", "1s");
+});
+</script>
+
+
+<div>
+<button id="bleu">Carré bleu</button>
+<button id="rose">Carré rose</button>
+<button id="rouge">Carré rouge</button>
+</div>
+
+<script>
+$("#bleu").click(function(){
+  	$("#pink").css("background-color", "blue");
+});
+$("#rose").click(function(){
+  	$("#pink").css("background-color", "pink");
+});
+$("#rouge").click(function(){
+  	$("#pink").css("background-color", "red");
+});
+</script>
+
+<div>
+<button id="bg-bleu">Fond bleu</button>
+<button id="bg-jaune">Fond jaune</button>
+<button id="bg-gris">Fond gris</button>
+</div>
+
+<script>
+$("#bg-bleu").click(function(){
+  	$("#conteneur").css("background-color", "lightblue");
+});
+$("#bg-jaune").click(function(){
+  	$("#conteneur").css("background-color", "lightyellow");
+});
+$("#bg-gris").click(function(){
+  	$("#conteneur").css("background-color", "lightgray");
+});
+</script>
+
+
+
+</body>
+</html>
+
