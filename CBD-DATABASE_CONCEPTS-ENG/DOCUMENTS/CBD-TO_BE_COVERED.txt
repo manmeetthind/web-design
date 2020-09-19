@@ -1,0 +1,10 @@
+Database (CBD):
+
+Topics that should be covered:
+
+1. CAP theorem
+2. SQL
+3. NoSQL Databases
+4. Cloud/Managed Databases
+5. Normalizing and Denormalizing of database schema design
+6. Choosing the Right Database(Conclusion)

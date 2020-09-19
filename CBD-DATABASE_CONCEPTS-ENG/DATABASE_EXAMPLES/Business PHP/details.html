@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Database</title>
+    <!-- Bootstrap -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/glyphicon.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="css/style.css" rel="stylesheet" >
+    <style>
+    .table-hover tr .buttons a{
+      display: none;
+    }
+    .table-hover tr:hover .buttons a{
+      display: inline;
+    }
+    .incoice-small{
+      font-size: 70%;
+    }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Database</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avtions</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown07">
+                <a class="dropdown-item" href="#">New Client</a>
+                <a class="dropdown-item" href="#">New Invoice</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <div class="card">
+            <div class="card-header">
+              <small class="text-muted">Invoices</small>
+              <h1 class="text-muted mt-0 h2">Invoice #2018001</h1>
+            </div>
+
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col-8 incoice-small">
+
+                  <div class="card">
+                      <div class="card-header bg-white">
+                        <h2 class="bg-dark text-white col-4 p-4 mb-2 h6">Business Company</h2>
+                        <div>123 Blvd. St-Jean, Pointe-Calire QC, H1H 2V9</div>
+                        <div>contact@emaildomain.com</div>
+                        <div>(123) 456-7890</div>
+                      </div>
+                      <div class="card-body">
+                        <div class="row my-4">
+                          <div class="col-4">
+                            <div><strong class="text-muted">To</strong></div>
+                            <strong>Client Name</strong>
+                            <div>Contact Person</div>
+                            <div>contact@emaildomain.com</div>
+                            <div>(123) 456-7890</div>
+                          </div>
+
+                          <div class="col-4 text-center">
+                            <div>
+                              <strong class="text-muted">Invoice No.</strong>
+                              <strong>201801</strong>
+                            </div>
+                            <div>
+                              <strong class="text-muted">Invoice Date</strong>
+                              <strong>Jul 2, 2018</strong>
+                            </div>
+                            <div>
+                              <strong class="text-muted">Invoice Status</strong>
+                              <strong>OVERDUE</strong>
+                            </div>
+                          </div>
+
+                          <div class="col-4">
+                            <strong>Payment Due:
+                              <span class="p-2 bg-light">Jul 2, 2018</span>
+                            </strong>
+                          </div>
+
+                        </div>
+                        <div class="row">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Hrs/Qty</th>
+                                <th scope="col">Rate</th>
+                                <th scope="col">Subtotal</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Sample Product Item 1</th>
+                                <td>3</td>
+                                <td>$34</td>
+                                <td>$102</td>
+                              </tr>
+                              <tr>
+                                <td>This is a sample invoice item. This is a sample invoice item. This is a sample invoice item.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Sample Product Item 2</th>
+                                <td>1</td>
+                                <td>$212</td>
+                                <td>$212</td>
+                              </tr>
+                              <tr>
+                                <td>This is a sample invoice item. This is a sample invoice item. This is a sample invoice item.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Sample Product Item 3</th>
+                                <td>4</td>
+                                <td>$100</td>
+                                <td>$400</td>
+                              </tr>
+                              <tr>
+                                <td>This is a sample invoice item. This is a sample invoice item. This is a sample invoice item.</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        <div class="row mt-4">
+                          <div class="col-6">
+                          </div>
+
+                          <div class="col-6">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr class="text-center">
+                                  <th colspan="2">Invoice Summary</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Total</th>
+                                  <td class="text-right">$714</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Payments</th>
+                                  <td class="text-right">$100</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Remaining Balance:</th>
+                                  <td class="text-right">
+                                    <strong>$614</strong>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                        <div class="row mt-3">
+                          <div class="col-12">
+                            <small>All totals are final and non-negotiable payments must be made by the specified due date with no exceptions. Mailed checks must be postmarked by the due date above.</small>
+                          </div>
+                        </div>
+
+                        </div>
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <form>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Client</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" name="name" placeholder="Company name">
+            </div>
+
+            <div class="form-group">
+              <label for="contact">Contact</label>
+              <input type="text" class="form-control" name="contact" placeholder="Contact person">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" name="phone" placeholder="(123) 456 7890">
+            </div>
+
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter email">
+              </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Save</button>
+          </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!-- Latest compiled and minified JavaScript
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    -->
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
