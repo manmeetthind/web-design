@@ -7,5 +7,5 @@ function submitInfo() {
 
 function displayInformation(userName, userEmail) {
     $("#informationBoard").append('<li>Name: ' + userName + '</li>');
-    $("#informationBoard").append('<li>Email id: ' + userEmail + '</li>')
+    $("#informationBoard").append('<li>Email id: ' + userEmail + '</li>');
 }

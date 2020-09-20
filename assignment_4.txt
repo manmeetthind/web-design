@@ -1,0 +1,5 @@
+Go through from class_6 exercise 1 and perform same things using 
+a. dbclick()
+b. mousedown()
+c. mousemove()
+d. mouseenter()
