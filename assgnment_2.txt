@@ -1,2 +1,3 @@
+NOTE: CHECK class 3
 a) jQuery Effects - Sliding: https://www.w3schools.com/jquery/jquery_slide.asp
 b) jQuery Effects - https://www.w3schools.com/jquery/jquery_animate.asp
