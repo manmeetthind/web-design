@@ -1,2 +1,4 @@
-Taking reference from class 5, create a form which takes Name, Roll no, mobile no, address, email-id from the user and print it below in a container.
-You have to beautify the UI given in exercise 5.
+# Check notes from lecture 5
+Create a form which takes Name, Roll no, mobile no, address, email-id from the user &
+print it below in a container.
+You have to beautify the UI given in lecture 5.
